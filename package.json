@@ -1,0 +1,27 @@
+{
+  "name": "guess_the_song",
+  "version": "1.0.0",
+  "description": "\"computer guesses song user is thinking of\"",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmarti57/groupProject2.git"
+  },
+  "author": "Caden Mayo, Nick Costantino, Brian Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmarti57/groupProject2/issues"
+  },
+  "homepage": "https://github.com/bmarti57/groupProject2#readme"
+}
