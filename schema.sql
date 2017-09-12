@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS allsongs_db;
+
 CREATE DATABASE allsongs_db;
 USE allsongs_db; 
 
