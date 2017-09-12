@@ -1,7 +1,7 @@
 {
   "name": "guess_the_song",
   "version": "1.0.0",
-  "description": "\"computer guesses song user is thinking of\"",
+  "description": "computer guesses song user is thinking of",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.1",

@@ -27,14 +27,16 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.DECMIAL (7,6),
             allowNull: false,
             validate: {
-                isDecimal: true      
+                isDecimal: true,
+                len: [.001, .999]   
             }
         },
         Tempo: {
             type: DataTypes.DECIMAL (5,2),
             allowNull: false,
             validate: {
-                isDecimal: true      
+                isDecimal: true,
+                len: [.001, 200]      
             }
         },
         Artist: {
@@ -53,30 +55,5 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
     return All_Song;
-
-    var Game = sequelize.define("Game", {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        }
-    });
-    return Game;
-
-    var Game_Choice = sequelize.define("Game_Choice", {
-        game_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        song_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        }
-    });
-    return Game_Choice;
 
 };
