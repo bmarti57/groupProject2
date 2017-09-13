@@ -6,7 +6,7 @@ module.exports = function(app) {
     });
 
     app.get("/game", function(req, res) {
-        res.sendFile(path.join(__dirname, "..public/questions.html"));
+        res.sendFile(path.join(__dirname, "../public/questions.html"));
     });
 
     app.get("/#finish_page", function(req, res) {

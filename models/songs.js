@@ -24,7 +24,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         Danceability: {
-            type: DataTypes.DECMIAL (7,6),
+            type: DataTypes.DECIMAL (7,6),
             allowNull: false,
             validate: {
                 isDecimal: true,
@@ -47,7 +47,7 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
         Title: {
-            type: DataTypes.STING,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [1]
