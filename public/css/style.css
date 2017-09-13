@@ -1,0 +1,71 @@
+.jumbotron{
+	text-align: center;
+	background:url("https://i.pinimg.com/236x/41/f1/5f/41f15f616c4cca1b16e1836e0d4b5669--plain-background-lularoe-logo.jpg");
+	color: #FF0000;
+	font-family: 'PT Sans', sans-serif;
+}	
+
+.directions{
+	font-size: 100%;
+}
+
+.title{
+	font-size: 400%;
+}
+
+#image{
+	size: 400x400;
+}
+
+.form-group{
+	color: white;
+}
+
+#submit{
+	background-color: black;
+	color: red;
+	font-size: 300%;
+}
+.container{
+	background:url("https://i.pinimg.com/236x/41/f1/5f/41f15f616c4cca1b16e1836e0d4b5669--plain-background-lularoe-logo.jpg");
+	font-family: 'Maven Pro', sans-serif;
+	color: #D8080B;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#nick{
+	font-size: 300%;
+	text-align: center;
+	color: red;
+	padding-top: 50px;
+
+}
+#q1{
+	background-color: Black;
+}
+
+#q2{
+	background-color: Black;
+}
+#q3{
+	background-color: Black;
+}
+
+#q4{
+	background-color: Black;
+}
+
+#q5{
+	background-color: Black;
+}
+
+#q6{
+	background-color: Black;
+}
+
+#q7{
+	background-color: Black;
+}
+#thing{
+	color:black;
+}
