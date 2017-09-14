@@ -19,10 +19,6 @@ module.exports = function(sequelize, DataTypes) {
                 len: [1]
             }
         },
-        Length: {
-            type: DataTypes.TIME,
-            allowNull: false
-        },
         Danceability: {
             type: DataTypes.DECIMAL (7,6),
             allowNull: false,
