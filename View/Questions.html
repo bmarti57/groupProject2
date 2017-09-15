@@ -2,7 +2,7 @@
  <html lang="en">
  <head>
    <meta charset="UTF-8">
-   <title>Guess that song studi</title>
+   <title>Guess that song studio</title>
    <link rel="stylesheet" type="text/css" href="./styles/style.css">
    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -12,15 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
  </head>
  <body>
 
 
  <div class="container">
-
+    <h1 id="pg2title">Guess That Song Studio</h1>
+    <a href="image"><img src="https://cdn.shopify.com/s/files/1/0105/4542/products/clearaudio-Concept-Black_grande.jpg?v=1500316212" alt="" height="300" width="400"></a>
     <h2 id="nick">Studio Questions</h2>
-    
           <hr>
 
           <div class="card" id="q1">
@@ -40,7 +40,7 @@
                   <ul class="list-group list-group-flush">
                       <li class="list-group-item">A-M</li>
                       <li class="list-group-item">N-Z</li>
-                <a href="#" class="btn btn-danger">Submit</a>
+                <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                   </ul>
                </div>
           </div>
@@ -51,7 +51,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Fast</li>
                         <li class="list-group-item">Slow</li>
-                  <a href="#" class="btn btn-danger">Submit</a>
+                  <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item">Yes</li>
                           <li class="list-group-item">No</li>
-                    <a href="#" class="btn btn-danger">Submit</a>
+                    <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                       </ul>
                   </div>
              </div>
@@ -73,7 +73,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Yes</li>
                             <li class="list-group-item">No</li>
-                      <a href="#" class="btn btn-danger">Submit</a>
+                      <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                         </ul>
                      </div>
                 </div>
@@ -84,7 +84,7 @@
                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">Yes</li>
                               <li class="list-group-item">No</li>
-                        <a href="#" class="btn btn-danger">Submit</a>
+                        <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                           </ul>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                                 <li class="list-group-item">Religious</li>
                                 <li class="list-group-item">Rock</li>
                                 <li class="list-group-item">Vocal</li>
-                          <a href="#" class="btn btn-danger">Submit</a>
+                          <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                             </ul>
                         </div>
                     </div>
@@ -116,6 +116,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
       </body>
  </html>
 
