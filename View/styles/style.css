@@ -125,3 +125,9 @@ hr {
 	color: red;
 	font-family: 'Maven Pro', sans-serif;
 }
+#signin{
+	padding-top: 20px;
+}
+#signupform{
+	color: red;
+}
