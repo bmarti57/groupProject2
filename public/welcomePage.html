@@ -4,28 +4,96 @@
 	<meta charset="UTF-8">
 	<title>Guess That Song Studio</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>  
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+   // $(window).on('load',function(){
+     //   $('#myModal').modal('show');
+    //});
+</script>
 </head>
 <body>
+<!--
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupform">Sign up form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                    </div>
+                  </div>
+                </nav>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form class="signup">
+                        <div class="form-group" id="signin">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="email-input" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="password-input" placeholder="Password">
+                        </div>
+                        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Error:</span> <span class="msg"></span>
+                        </div>
+                      </form>
+                      <br />
+                    </div>
+                  </div>
+                </div></p>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>-->
 
 <div class="jumbotron">
    <h1 class="title">Guess That Song Studio</h1>
   <a href="image"><img src="https://cdn.shopify.com/s/files/1/0105/4542/products/clearaudio-Concept-Black_grande.jpg?v=1500316212" alt="" height="300" width="400"></a>
  
-  <p class="directions">Pick A song and answer the questions. If your song is in the studio, it will be played! If not, add your song to our studio.</p>
+  <p class="directions">Pick A song and answer the questions. If your song is in the studio, it will be guessed! If not, add your song to our studio.</p>
 
-
-  <a href="/game"><button type="button" class="btn btn-danger" id="thing">Play Game</button></a>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <h2>Login Form</h2>
+              <form class="login">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email-input" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="password-input" placeholder="Password">
+                </div>
+                <a href="/game"><button type="submit" class="btn btn-danger" href="Questions.html" id="thing">Play Game</button></a>
+              </form>
+  </div><!--Log IN-->
+  <div class="col-sm-3"></div>
+  </div>
+</div>
+</div>
   
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/login.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
