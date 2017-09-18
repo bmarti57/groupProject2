@@ -46,10 +46,10 @@ function checkRemaining(game) {
         }
     }).then(function (res) {
         if (res.length === 0) {
-            
+            window.location.replace("../../public/results_input.html");
         }
         else if (res.length === 1) {
-
+            window.location.replace("../../public/results_input.html");
         }
         else {
 
