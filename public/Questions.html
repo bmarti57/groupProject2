@@ -31,7 +31,7 @@
                     <input type="radio" name="q1" value="Yes">
                     <input type="radio" name="q1" value="No">                   
                   </form>
-                  <a href="#" class="btn btn-danger" onclick="genQuestion(2); databaseSearch(1, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                  <a href="#" class="btn btn-danger" onclick=" databaseSearch(1, keyword, this.selectedIndex, 1);genQuestion(2)">Submit</a>
              </div>
         </div>
 
@@ -42,7 +42,7 @@
                         <input type="radio" name="q2" value="Yes">
                         <input type="radio" name="q2" value="No"> 
                   </form>
-                  <a href="#" class="btn btn-danger" onclick="genQuestion(3); databaseSearch(2, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                  <a href="#" class="btn btn-danger" onclick=" databaseSearch(2, keyword, this.selectedIndex, 1); genQuestion(3)">Submit</a>
                </div>
           </div>
 
@@ -52,7 +52,7 @@
                     <form class="list-group list-group-flush">
                             <input type="radio" name="q3" value="Yes">
                             <input type="radio" name="q3" value="No"> 
-                  <a href="#" class="btn btn-danger" onclick="genQuestion(4); databaseSearch(3, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                  <a href="#" class="btn btn-danger" onclick="databaseSearch(3, keyword, this.selectedIndex, 1);genQuestion(4)">Submit</a>
                     </form>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                       <form class="list-group list-group-flush">
                             <input type="radio" name="q4" value="Yes">
                             <input type="radio" name="q4" value="No"> 
-                    <a href="#" class="btn btn-danger" onclick="genQuestion(5); databaseSearch(4, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                    <a href="#" class="btn btn-danger" onclick=" databaseSearch(4, keyword, this.selectedIndex, 1); genQuestion(5)">Submit</a>
                       </form>
                   </div>
              </div>
@@ -74,7 +74,7 @@
                         <form class="list-group list-group-flush">
                                 <input type="radio" name="q5" value="Yes">
                                 <input type="radio" name="q5" value="No"> 
-                      <a href="#" class="btn btn-danger" onclick="genQuestion(6); databaseSearch(5, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                      <a href="#" class="btn btn-danger" onclick=" databaseSearch(5, keyword, this.selectedIndex, 1);genQuestion(6)">Submit</a>
                         </form>
                      </div>
                 </div>
@@ -86,7 +86,7 @@
                                 <input type="radio" name="q6" value="Yes">
                                 <input type="radio" name="q6" value="No"> 
                           </form>
-                          <a href="#" class="btn btn-danger" onclick="genQuestion(7); databaseSearch(6, keyword, selectedIndex, this.game_id)">Submit</a>
+                          <a href="#" class="btn btn-danger" onclick=" databaseSearch(6, keyword, this.selectedIndex, 1);genQuestion(7)">Submit</a>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@
                                     <input type="radio" name="q7" value="Yes">
                                     <input type="radio" name="q7" value="No"> 
                             </form>
-                            <a href="#" class="btn btn-danger" onclick="databaseSearch(7, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
+                            <a href="#" class="btn btn-danger" onclick="databaseSearch(7, keyword, this.selectedIndex,1)">Submit</a>
                         </div>
                     </div>
 

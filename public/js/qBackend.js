@@ -39,52 +39,121 @@ function genQuestion(qNo) {
     }
 };
 
+function checkRemaining(game) {
+    if (game_choices.findAll({
+        where: {
+            game_id: game
+        }
+    }).then(function (res) {
+        if (res.length === 0) {
+            window.location.replace("../../public/results_input.html");
+        }
+        else if (res.length === 1) {
+            window.location.replace("../../public/results_input.html");
+        }
+        else {
+
+        }
+    })
+}
+
+
 function databaseSearch(qNum, keystring, yes, gameID) {
     switch (qNum) {
         case 1:
-            if (yes) {
+            if (yes===0) {
                 all_songs.findAll({
                     where: {
                         Artist: {
                             $not: letters[keystring] + '%'
                         }
                     }
-                });
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
             }
             else {
                 all_songs.findAll({
                     where: {
                         Artist: letters[keystring] + '%'
                     }
-                });
-            },
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
             break;
         case 2:
-            if (yes) {
+            if (yes===0) {
                 all_songs.findAll({
                     where: {
                         Title: {
                             $not: letters[keystring] + '%'
                         }
                     }
-                });
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
+                    }
+                })
             }
             else {
                 all_songs.findAll({
                     where: {
                         Title: letters[keystring] + '%'
                     }
-                });
-            },
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
+                    }
+                })
+            }
             break;
         case 3:
-            if (yes) {
+            if (yes===0) {
                 all_songs.findAll({
                     where: {
                         Tempo: {
                             $gte: 108
                         },
                         game_id: gameID
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
                     }
                 })
             }
@@ -95,16 +164,178 @@ function databaseSearch(qNum, keystring, yes, gameID) {
                             $lt: 108
                         }
                     }
-                })
-            },
-            break;
-        case 4:
-            if (yes) {
-                all_songs.findAll({
-                    where: {
-
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
                     }
                 })
             }
+            break;
+        case 4:
+            if (yes === 0) {
+                all_songs.findAll({
+                    where: {
+                        Danceability: {
+                            $gte: .50
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
+                    }
+                })
+            }
+            else {
+                all_songs.findAll({
+                    where: {
+                        Danceability: {
+                            $lt: .50
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1);
+                    }
+                })
+            }
+            break;
+        case 5:
+            if (yes === 0) {
+                all_songs.findAll({
+                    where: {
+                       Length : {
+                           $gte: 1000
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            else {
+                all_songs.findAll({
+                    where: {
+                      Length  : {
+                            $lt: 1000
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            break;
+        case 6:
+            if (yes === 0) {
+                all_songs.findAll({
+                    where: {
+                        Decade: {
+                            $gte: decade[keystring]
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            else {
+                all_songs.findAll({
+                    where: {
+                        Decade: {
+                            $lt: decade[keystring]
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            break;
+        case 7:
+            if (yes === 0) {
+                all_songs.findAll({
+                    where: {
+                        Genre: {
+                            $not: genres[keystring]
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            else {
+                all_songs.findAll({
+                    where: {
+                        Genre: {
+                            genres[keystring]
+                        }
+                    }
+                }).then(function (res) {
+                    for (var i = 0; i < res.length; i++) {
+                        game_choices.destroy({
+                            where: {
+                                song_id: res[i].id,
+                                game_id: gameID
+                            }
+                        })
+                        checkRemaining(1)
+                    }
+                })
+            }
+            break;
     }
 }
