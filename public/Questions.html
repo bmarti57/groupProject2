@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+﻿ <!DOCTYPE html>
  <html lang="en">
  <head>
    <meta charset="UTF-8">
@@ -23,15 +23,15 @@
     <a href="image"><img src="https://cdn.shopify.com/s/files/1/0105/4542/products/clearaudio-Concept-Black_grande.jpg?v=1500316212" alt="" height="300" width="400"></a>
     <h2 id="nick">Studio Questions</h2>
           <hr>
-
+     <script>genQuestion(1)</script>
           <div class="card" id="q1">
               <h3 class="card-header" id="qH1">Song Artist Begins With(Letter):</h3>
               <div class="card-block">
                   <ul class="list-group list-group-flush">
                       <li class="list-group-item">Yes</li>
                       <li class="list-group-item">No</li>
-                       <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                   </ul>
+                  <a href="#" class="btn btn-danger" onclick="genQuestion(2); databaseSearch(1, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
              </div>
         </div>
 
@@ -41,8 +41,8 @@
                   <ul class="list-group list-group-flush">
                       <li class="list-group-item">Yes</li>
                       <li class="list-group-item">No</li>
-                <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                   </ul>
+                  <a href="#" class="btn btn-danger" onclick="genQuestion(3); databaseSearch(2, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                </div>
           </div>
 
@@ -52,18 +52,18 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Yes</li>
                         <li class="list-group-item">No</li>
-                  <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                  <a href="#" class="btn btn-danger" onclick="genQuestion(4); databaseSearch(3, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                     </ul>
                 </div>
             </div>
 
               <div class="card" id="q4">
-                  <h3 class="card-header" id="qH4">Your Song Has A High Dancability</h3>
+                  <h3 class="card-header" id="qH4">Your Song Has A High Danceability</h3>
                   <div class="card-block">
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item">Yes</li>
                           <li class="list-group-item">No</li>
-                    <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                    <a href="#" class="btn btn-danger" onclick="genQuestion(5); databaseSearch(4, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                       </ul>
                   </div>
              </div>
@@ -74,7 +74,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Yes</li>
                             <li class="list-group-item">No</li>
-                      <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                      <a href="#" class="btn btn-danger" onclick="genQuestion(6); databaseSearch(5, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                         </ul>
                      </div>
                 </div>
@@ -85,25 +85,24 @@
                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">Yes</li>
                               <li class="list-group-item">No</li>
-                        <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                           </ul>
+                          <a href="#" class="btn btn-danger" onclick="genQuestion(7); databaseSearch(6, keyword, selectedIndex, this.game_id)">Submit</a>
                     </div>
                 </div>
 
                     <div class="card" id="q7">
-                        <h3 class="card-header" id="qH7">The Genre Of Your Son</h3>
+                        <h3 class="card-header" id="qH7">The Genre Of Your Song</h3>
                         <div class="card-block">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Yes</li>
                                 <li class="list-group-item">No</li>
-                               
-                          <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
                             </ul>
+                            <a href="#" class="btn btn-danger" onclick="databaseSearch(7, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                         </div>
                     </div>
 
             <hr>
-
+     </div>
             <footer>
               <a href="/logout"><button class="btn btn-warning btn-lg">Log Out</button></a>
             </footer>
@@ -116,7 +115,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-        <script src="javascript.js"></script>
+        <script src="js/qBackend.js"></script>
       </body>
  </html>
 
