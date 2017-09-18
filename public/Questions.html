@@ -27,10 +27,10 @@
           <div class="card" id="q1">
               <h3 class="card-header" id="qH1">Song Artist Begins With(Letter):</h3>
               <div class="card-block">
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Yes</li>
-                      <li class="list-group-item">No</li>
-                  </ul>
+                  <form class="list-group list-group-flush">
+                    <input type="radio" name="q1" value="Yes">
+                    <input type="radio" name="q1" value="No">                   
+                  </form>
                   <a href="#" class="btn btn-danger" onclick="genQuestion(2); databaseSearch(1, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
              </div>
         </div>
@@ -38,10 +38,10 @@
           <div class="card" id="q2">
               <h3 class="card-header" id="qH2">Song Title Begins With(Letter):</h3>
               <div class="card-block">
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Yes</li>
-                      <li class="list-group-item">No</li>
-                  </ul>
+                  <form class="list-group list-group-flush">
+                        <input type="radio" name="q2" value="Yes">
+                        <input type="radio" name="q2" value="No"> 
+                  </form>
                   <a href="#" class="btn btn-danger" onclick="genQuestion(3); databaseSearch(2, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                </div>
           </div>
@@ -49,43 +49,43 @@
             <div class="card" id="q3">
                 <h3 class="card-header" id="qH3">Your Song Has A Tempo That Is:</h3>
                 <div class="card-block">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Yes</li>
-                        <li class="list-group-item">No</li>
+                    <form class="list-group list-group-flush">
+                            <input type="radio" name="q3" value="Yes">
+                            <input type="radio" name="q3" value="No"> 
                   <a href="#" class="btn btn-danger" onclick="genQuestion(4); databaseSearch(3, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
-                    </ul>
+                    </form>
                 </div>
             </div>
 
               <div class="card" id="q4">
                   <h3 class="card-header" id="qH4">Your Song Has A High Danceability</h3>
                   <div class="card-block">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Yes</li>
-                          <li class="list-group-item">No</li>
+                      <form class="list-group list-group-flush">
+                            <input type="radio" name="q4" value="Yes">
+                            <input type="radio" name="q4" value="No"> 
                     <a href="#" class="btn btn-danger" onclick="genQuestion(5); databaseSearch(4, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
-                      </ul>
+                      </form>
                   </div>
              </div>
 
                 <div class="card" id="q5">
                     <h3 class="card-header" id="qH5">The Length Of Your Song Is Greater Than 3:30.</h3>
                     <div class="card-block">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Yes</li>
-                            <li class="list-group-item">No</li>
+                        <form class="list-group list-group-flush">
+                                <input type="radio" name="q5" value="Yes">
+                                <input type="radio" name="q5" value="No"> 
                       <a href="#" class="btn btn-danger" onclick="genQuestion(6); databaseSearch(5, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
-                        </ul>
+                        </form>
                      </div>
                 </div>
 
                   <div class="card" id="q6">
                       <h3 class="card-header" id="qH6">Your Song Was Released Before The Year 2000</h3>
                       <div class="card-block">
-                          <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Yes</li>
-                              <li class="list-group-item">No</li>
-                          </ul>
+                          <form class="list-group list-group-flush">
+                                <input type="radio" name="q6" value="Yes">
+                                <input type="radio" name="q6" value="No"> 
+                          </form>
                           <a href="#" class="btn btn-danger" onclick="genQuestion(7); databaseSearch(6, keyword, selectedIndex, this.game_id)">Submit</a>
                     </div>
                 </div>
@@ -93,10 +93,10 @@
                     <div class="card" id="q7">
                         <h3 class="card-header" id="qH7">The Genre Of Your Song</h3>
                         <div class="card-block">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Yes</li>
-                                <li class="list-group-item">No</li>
-                            </ul>
+                            <form class="list-group list-group-flush">
+                                    <input type="radio" name="q7" value="Yes">
+                                    <input type="radio" name="q7" value="No"> 
+                            </form>
                             <a href="#" class="btn btn-danger" onclick="databaseSearch(7, this.keyword, this.selectedIndex, this.game_id)">Submit</a>
                         </div>
                     </div>
