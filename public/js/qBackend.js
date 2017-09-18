@@ -10,17 +10,17 @@ function genQuestion(qNo) {
     if (qNo === 1 || qNo === 2) {
         keyword = Math.floor(Math.random() * 25);
         if (qNo === 1) {
-            $('#qH' + qNo).write('The artist name starts with ' + letters[keyword]);
+            $('#qH' + qNo).innerHTML('The artist name starts with ' + letters[keyword]);
             return keyword;
         }
         else {
-            $('#qH' + qNo).write('The song title begins with ' + letters[keyword]);
+            $('#qH' + qNo).innerHTML('The song title begins with ' + letters[keyword]);
             return keyword;
         }
     }
     else if (qNo === 5) {
         keyword = Math.floor(Math.random() * 6);
-        $('#qH' + qNo).write('The song is over  ' + length[keyword] + ' minutes long.');
+        $('#qH' + qNo).innerHTML('The song is over  ' + length[keyword] + ' minutes long.');
         return keyword;
     }
     else if (qNo === 6 || qNo === 7) {
@@ -49,7 +49,7 @@ function checkRemaining(game) {
             window.location.replace("../../public/results_input.html");
         }
         else if (res.length === 1) {
-            window.location.replace("../../public/results_input.html");
+             window.location.replace("../../public/results_input.html");
         }
         else {
 
