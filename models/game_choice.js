@@ -9,5 +9,15 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         }
     });
+
+    Game_Choice.associate = function(models) {
+        Game_Choice.belongsTo(models.All_Song, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
+    
     return Game_Choice;
 };
+

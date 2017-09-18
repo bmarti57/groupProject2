@@ -34,8 +34,77 @@ function genQuestion(qNo) {
     }
 };
 
-function databaseSearch(qNum, keystring, yes) {
+function databaseSearch(qNum, keystring, yes, gameID) {
     switch (qNum) {
         case 1:
+            if (yes) {
+                game_choices.destroy({
+                    where: {
+                        Artist: {
+                            $not: letters[keystring] + '%'
+                        },
+                        game_id: gameID
+                    }
+                });
+            }
+            else {
+                game_choices.destroy({
+                    where: {
+                        Artist: letters[keystring] + '%',
+                        game_id: gameID
+                    }
+                });
+            },
+            break;
+        case 2:
+            if (yes) {
+                game_choices.destroy({
+                    where: {
+                        Title: {
+                            $not: letters[keystring] + '%'
+                        },
+                        game_id: gameID
+                    }
+                });
+            }
+            else {
+                game_choices.destroy({
+                    where: {
+                        Title: letters[keystring] + '%',
+                        game_id: gameID
+                    }
+                });
+            },
+            break;
+        case 3:
+            if (yes) {
+                game_choices.destroy({
+                    where: {
+                        Tempo: {
+                            $gte: 108
+                        },
+                        game_id: gameID
+                    }
+                })
+            }
+            else {
+                game_choices.destroy({
+                    where: {
+                        Tempo: {
+                            $lt: 108
+                        },
+                        game_id: gameID
+                    }
+                })
+            },
+            break;
+        case 4:
+            if (yes) {
+                game_choices.destroy({
+                    where: {
+
+                    }
+                })
+            }
     }
 }

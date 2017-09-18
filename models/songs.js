@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
             autoIncrement: true
         },
         Decade: {
-            type: DataTypes.STRING,
+            type: DataTypes.DECIMAL (8,5),
             allowNull: false,
             validate: {
                 isAlphanumeric: true
@@ -18,10 +18,6 @@ module.exports = function(sequelize, DataTypes) {
             validate: {
                 len: [1]
             }
-        },
-        Length: {
-            type: DataTypes.TIME,
-            allowNull: false
         },
         Danceability: {
             type: DataTypes.DECIMAL (7,6),
