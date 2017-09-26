@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Guess that song studio</title>
+   <link rel="stylesheet" type="text/css" href="./styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+ </head>
+ <body>
+
+
+ <div class="container">
+    <h1 id="pg2title">Guess That Song Studio</h1>
+    <a href="image"><img src="https://cdn.shopify.com/s/files/1/0105/4542/products/clearaudio-Concept-Black_grande.jpg?v=1500316212" alt="" height="300" width="400"></a>
+    <h2 id="nick">Studio Questions</h2>
+          <hr>
+        <div class="container">
+            <div class="row">
+          <div class="card" id="q1">
+              <h3 class="card-header" id="qH1">Song Artist Begins With(Letter):</h3>
+              <div class="card-block">
+                  <ul class="list-group list-group-flush">
+                      <div class="col-md-3"
+                      <li class="list-group-item">Yes</li>
+                      <li class="list-group-item">No</li>
+                       <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                  </ul>
+             </div>
+        </div>
+        
+          <div class="card" id="q2">
+              <h3 class="card-header" id="qH2">Song Title Begins With(Letter):</h3>
+              <div class="card-block">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Yes</li>
+                      <li class="list-group-item">No</li>
+                <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                  </ul>
+               </div>
+          </div>
+
+            <div class="card" id="q3">
+                <h3 class="card-header" id="qH3">Your Song Has A Tempo That Is:</h3>
+                <div class="card-block">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Yes</li>
+                        <li class="list-group-item">No</li>
+                  <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                    </ul>
+                </div>
+            </div>
+
+              <div class="card" id="q4">
+                  <h3 class="card-header" id="qH4">Your Song Has A High Dancability</h3>
+                  <div class="card-block">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Yes</li>
+                          <li class="list-group-item">No</li>
+                    <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                      </ul>
+                  </div>
+             </div>
+
+                <div class="card" id="q5">
+                    <h3 class="card-header" id="qH5">The Length Of Your Song Is Greater Than 3:30.</h3>
+                    <div class="card-block">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Yes</li>
+                            <li class="list-group-item">No</li>
+                      <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                        </ul>
+                     </div>
+                </div>
+
+                  <div class="card" id="q6">
+                      <h3 class="card-header" id="qH6">Your Song Was Released Before The Year 2000</h3>
+                      <div class="card-block">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Yes</li>
+                              <li class="list-group-item">No</li>
+                        <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                          </ul>
+                    </div>
+                </div>
+
+                    <div class="card" id="q7">
+                        <h3 class="card-header" id="qH7">The Genre Of Your Son</h3>
+                        <div class="card-block">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Yes</li>
+                                <li class="list-group-item">No</li>
+                               
+                          <a href="#" class="btn btn-danger" onclick="nextQuestion()">Submit</a>
+                            </ul>
+                        </div>
+                    </div>
+
+            <hr>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+      </body>
+ </html>
+
+
